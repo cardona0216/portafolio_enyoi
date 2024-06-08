@@ -1,0 +1,23 @@
+:root{
+    --first-color:#963be7;
+    --second-color:#3b0962;
+    --terciary-color:#fd2c9a;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
+
+li a {
+    text-decoration: none;
+    font-size: 30px;
+} 
