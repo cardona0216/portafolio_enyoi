@@ -1,0 +1,70 @@
+.right-container {
+    width: 70%;
+    height: 100%;
+    margin-left: 30%; /* Para asegurarse de que no esté detrás del left-container */
+    /* background: linear-gradient(90deg, var(--terciary-color) 38%,  var(--first-color) 100%); */
+    background: var(--second-color);
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    padding-top: 10px;
+    /* Otros estilos necesarios */
+}
+
+.section-projects{
+    padding-top: 45px;
+    
+}
+
+.container-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-project {
+    background: linear-gradient(90deg, var(--terciary-color) 38%,  var(--first-color) 100%);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(50% - 20px); /* Tres tarjetas por fila con espacio entre ellas */
+    display: flex; /* Flexbox para organizar la imagen y la descripción en fila */
+    padding: 10px;
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+}
+
+.container-img-card {
+    flex-shrink: 0; /* Evita que la imagen se reduzca */
+    margin-right: 20px; /* Espacio entre la imagen y la descripción */
+}
+
+
+.container-img-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.card-description-card {
+    flex-grow: 1; /* Permite que la descripción ocupe el espacio restante */
+}
+
+.card-description-card h3 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.card-description-card p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.card-description-card a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p{
+    color: aqua;
+}
