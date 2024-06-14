@@ -11,6 +11,7 @@
     align-items: center;
     position: fixed;
     top: 0;
+    justify-content: space-between;
     
 }
 
@@ -42,6 +43,8 @@ header {
 
 }
 
+
+
 .name-profile {
     text-align: center;
     padding-left: 30px;
@@ -56,9 +59,23 @@ header {
 
 .img-logo{
     max-width: 50%;
-    height: auto;
-    margin-top: 40px;
+  
+  
     
+}
+
+.navbar-profile {
+    width: 100%;
+}
+
+.navbar-profile ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -85,3 +102,10 @@ footer.navbar-social-networks{
 .navbar-profile li {
     margin-bottom: 10px; /* Ajusta el espacio entre los elementos según sea necesario */
 }
+
+.perfil{
+    text-align: justify;
+    padding-right: 10px;
+}
+
+

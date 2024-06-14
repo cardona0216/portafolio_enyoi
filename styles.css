@@ -23,8 +23,12 @@ li a {
     font-size: 30px;
 } 
 
-h2, h3{
-    color: white;
+h2{
+    color: #ee0cef;
+}
+
+h3{
+  color: #5c098f;
 }
 
 /* body{
