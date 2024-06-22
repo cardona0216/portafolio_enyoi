@@ -11,6 +11,11 @@
     /* Otros estilos necesarios */
 }
 
+.perfil{
+    text-align: justify;
+    padding-right: 10px;
+}
+
 .section-projects{
     padding-top: 45px;
     
@@ -113,14 +118,34 @@
 .container-img-card {
     flex-shrink: 0; /* Evita que la imagen se reduzca */
     margin-right: 20px; /* Espacio entre la imagen y la descripción */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ajusta según sea necesario */
+    
+}
+
+.container-img-proyectos {
+    flex-shrink: 0; /* Evita que la imagen se reduzca */
+    margin-right: 20px; /* Espacio entre la imagen y la descripción */
+   
+    
+}
+
+.img-card{
+    max-width: 50%;
+    height: auto;
+    border-radius: 30%;
+}
+
+.img-card-proyectos{
+    width: 100px; 
+    height: 100px;
+    border-radius: 30%;
 }
 
 
-.container-img-card img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-} 
+
 
 .card-description-card {
     flex-grow: 1; /* Permite que la descripción ocupe el espacio restante */

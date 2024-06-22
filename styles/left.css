@@ -1,10 +1,9 @@
 
 
 
-.left-container{
+.left-container {
     width: 30%;
     height: 100%;
-    /* background: linear-gradient(90deg, var(--terciary-color) 38%,  var(--first-color) 100%); */
     background: var(--first-color);
     display: flex;
     flex-direction: column;
@@ -12,16 +11,29 @@
     position: fixed;
     top: 0;
     justify-content: space-between;
-    
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-header {
+.left-container header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center; /* Centra verticalmente los elementos en el header */
-    padding: 3px 3px;
+    align-items: center;
+    text-align: center;
+}
+
+.container-img-profile img,
+.container-img-logo img {
+    width: 80%;
+    height: auto;
+    max-width: 150px; /* Ajusta según sea necesario */
+    margin: 10px 0;
+}
+
+
+header .navbar-profile ul li a {
+    color: white; /* Cambia el color de los enlaces a blanco */
     
 }
 
@@ -37,17 +49,35 @@ header {
 }
 
 .img-profile {
-    max-width: 50%;
-    height: auto;
     border-radius: 50%; /* Solo si quieres que la imagen de perfil sea circular */
 
 }
 
 
 
+
 .name-profile {
-    text-align: center;
-    padding-left: 30px;
+    font-size: 2vw; /* Tamaño del texto relativo al ancho de la ventana */
+    margin: 10px 0;
+    color: white;
+}
+
+.navbar-profile ul li {
+    margin: 10px 0;
+}
+
+.navbar-profile ul li a {
+   
+    font-size: 1.5vw; /* Tamaño del texto relativo al ancho de la ventana */
+}
+
+
+.navbar-profile ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+    width: 100%;
 }
 
 .container-img-logo{
@@ -55,13 +85,6 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%; /* Ajusta según sea necesario */
-}
-
-.img-logo{
-    max-width: 50%;
-  
-  
-    
 }
 
 .navbar-profile {
@@ -99,13 +122,8 @@ footer.navbar-social-networks{
     margin: 0 10px;
 }
 
-.navbar-profile li {
-    margin-bottom: 10px; /* Ajusta el espacio entre los elementos según sea necesario */
-}
 
-.perfil{
-    text-align: justify;
-    padding-right: 10px;
-}
+
+
 
 
