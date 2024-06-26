@@ -1,3 +1,12 @@
+p{
+    color: white;
+}
+
+hr{
+    margin-bottom: 10px;
+}
+
+
 .right-container {
     width: 70%;
     height: 100%;
@@ -16,16 +25,6 @@
     padding-right: 10px;
 }
 
-.section-projects{
-    padding-top: 45px;
-    
-}
-
-.container-cards{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
 
 .container-cursos{
     display: flex;
@@ -34,48 +33,6 @@
     flex-direction: row;
     align-content: space-around;
     justify-content: center;
-}
-
-.container-referencias{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.card-project {
-    background: var(--terciary-color);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: calc(50% - 20px); /* Tres tarjetas por fila con espacio entre ellas */
-    display: flex; /* Flexbox para organizar la imagen y la descripción en fila */
-    padding: 10px;
-    align-items: center; /* Alinea verticalmente los elementos al centro */
-}
-
-.card-cursos {
-    background: var(--terciary-color);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: calc(50% - 20px); /* Tres tarjetas por fila con espacio entre ellas */
-    display: flex; /* Flexbox para organizar la imagen y la descripción en fila */
-    padding: 10px;
-    align-items: center; /* Alinea verticalmente los elementos al centro */
-}
-
-.card-referencias {
-    background: #a727cf;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: calc(30% - 20px); /* Tres tarjetas por fila con espacio entre ellas */
-    display: flex; /* Flexbox para organizar la imagen y la descripción en fila */
-    padding: 10px;
-    align-items: center; /* Alinea verticalmente los elementos al centro */
-    flex-wrap: wrap;
 }
 
 .card-cursos {
@@ -90,6 +47,59 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+.section-projects{
+    padding-top: 45px;
+    
+}
+.container-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    gap: 20px; /* Ajusta el espacio entre las tarjetas según sea necesario */
+}
+
+.container-img-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-shrink: 0; /* Evita que la imagen se reduzca */
+    margin-right: 20px; /* Espacio entre la imagen y la descripción */
+}
+
+
+
+
+.card-project {
+    background: #ed0057;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.container-referencias{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card-referencias {
+    background: #a727cf;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(30% - 20px); /* Tres tarjetas por fila con espacio entre ellas */
+    display: flex; /* Flexbox para organizar la imagen y la descripción en fila */
+    padding: 10px;
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    flex-wrap: wrap;
+}
+
+
 
 .section-experiencia{
     display: flex;
@@ -114,41 +124,41 @@
     flex-direction: column;
 }
 
-
-.container-img-card {
-    flex-shrink: 0; /* Evita que la imagen se reduzca */
-    margin-right: 20px; /* Espacio entre la imagen y la descripción */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Ajusta según sea necesario */
-    
-}
-
 .container-img-proyectos {
-    flex-shrink: 0; /* Evita que la imagen se reduzca */
-    margin-right: 20px; /* Espacio entre la imagen y la descripción */
-   
-    
+    flex: 0 0 30%; /* Esto hace que el div ocupe el 30% del contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.img-card{
-    max-width: 50%;
-    height: auto;
-    border-radius: 30%;
+.container-img-proyectos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que la imagen ocupe todo el div sin perder la proporción */
 }
-
-.img-card-proyectos{
-    width: 100px; 
-    height: 100px;
-    border-radius: 30%;
-}
-
-
-
 
 .card-description-card {
-    flex-grow: 1; /* Permite que la descripción ocupe el espacio restante */
+    flex: 1; /* Esto hace que el div ocupe el 70% restante del contenedor */
+    padding: 20px; /* Ajusta el padding según sea necesario */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-img-card img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 20%;
+    object-fit: cover;
+} 
+
+.card-description-card {
+    flex: 1; /* Esto hace que el div ocupe el 70% restante del contenedor */
+    padding: 20px; /* Ajusta el padding según sea necesario */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .card-description-card h3 {
@@ -165,10 +175,7 @@
     color: var(--link-color);
     text-decoration: none;
     font-weight: bold;
-}
-
-p{
-    color: white;
+    text-align: center;
 }
 
 .href-proyectos{
@@ -178,9 +185,7 @@ p{
    
 }
 
-hr{
-    margin-bottom: 10px;
-}
+
 
 
 .img-experiencia {
@@ -197,10 +202,6 @@ hr{
     color: rgb(247, 242, 242); /* Color para el texto dentro de la etiqueta span */
 }
 
-
-.card-p1 {
-    color: #ee0cef /* Color para el texto dentro de la etiqueta p */
-}
-.card-p span {
-    color: rgb(247, 242, 242); /* Color para el texto dentro de la etiqueta span */
+p{
+    text-align: justify;
 }

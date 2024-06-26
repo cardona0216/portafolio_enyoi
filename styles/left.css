@@ -5,6 +5,7 @@
     width: 30%;
     height: 100%;
     background: var(--first-color);
+    /* background: black; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,28 +16,22 @@
     box-sizing: border-box;
 }
 
-.left-container header {
+/* .left-container header {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
+} */
 
 .container-img-profile img,
 .container-img-logo img {
+    border-radius: 50%;
     width: 80%;
     height: auto;
     max-width: 150px; /* Ajusta según sea necesario */
     margin: 10px 0;
 }
-
-
-header .navbar-profile ul li a {
-    color: white; /* Cambia el color de los enlaces a blanco */
-    
-}
-
 
 .container-img-profile {
     display: flex;
@@ -44,47 +39,12 @@ header .navbar-profile ul li a {
     align-items: center;
     width: 100%; /* Ajusta según sea necesario */
     
-   
     
 }
-
-.img-profile {
-    border-radius: 50%; /* Solo si quieres que la imagen de perfil sea circular */
-
-}
-
-
-
-
 .name-profile {
     font-size: 2vw; /* Tamaño del texto relativo al ancho de la ventana */
     margin: 10px 0;
     color: white;
-}
-
-.navbar-profile ul li {
-    margin: 10px 0;
-}
-
-.navbar-profile ul li a {
-   
-    font-size: 1.5vw; /* Tamaño del texto relativo al ancho de la ventana */
-}
-
-
-.navbar-profile ul {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    list-style: none;
-    width: 100%;
-}
-
-.container-img-logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Ajusta según sea necesario */
 }
 
 .navbar-profile {
@@ -101,6 +61,34 @@ header .navbar-profile ul li a {
     align-items: center;
 }
 
+header .navbar-profile ul li a {
+    color: white; /* Cambia el color de los enlaces a blanco */
+    
+}
+
+.navbar-profile ul li {
+    margin: 10px 0;
+}
+
+.navbar-profile ul li a {
+   
+    font-size: 1.5vw; /* Tamaño del texto relativo al ancho de la ventana */
+}
+
+.navbar-profile ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.container-img-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ajusta según sea necesario */
+}
 
 footer.navbar-social-networks{
     position: fixed;
